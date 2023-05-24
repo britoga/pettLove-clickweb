@@ -24,6 +24,19 @@
     display: none;
 }
 
+@media screen and (max-width: 1090px) {
+    .Dashed,
+    .DashedTransform {
+        opacity: 0.15;
+    }
+
+    /* .Dashed,
+    .DashedTransform {
+        visibility: hidden;
+    } */
+    
+}
+
 @media screen and (max-width: 850px) {
     .Dashed {
         display: none;
