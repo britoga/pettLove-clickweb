@@ -24,7 +24,7 @@ function Home() {
   const stepThirdTitleEmphasis = "encontro";
 
   useEffect(() => {
-    AOS.init({ duration: 1500 });
+    AOS.init({ duration: 1000 });
   }, []);
   return (
     <div className="Home">
