@@ -22,11 +22,11 @@ function Header(listPage) {
 
       {isMobile ? (
         <div className={styles.imgLogoMobile}>
-          <img src={logoMobile} alt="logo" />
+          <a href="/"> <img src={logoMobile} alt="logo" /> </a>
         </div>
       ) : (
         <div className={styles.imgLogo}>
-          <img src={logoDesktop} alt="logo" />
+          <a href="/"> <img src={logoDesktop} alt="logo" /> </a>
         </div>
       )}
 
