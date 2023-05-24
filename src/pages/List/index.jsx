@@ -1,8 +1,8 @@
 import Header from "../../components/Header";
-import styles from "./List.module.css";
 import Footer from "../../components/Footer";
-import Anouncer from "../../assets/anouncer-desktop.svg";
-import AnouncerMob from "../../assets/anouncer-mobile.svg";
+import styles from "./List.module.css";
+import AnouncerDesktop from "../../assets/anouncer-desktop.svg";
+import AnouncerMobile from "../../assets/anouncer-mobile.svg";
 import useMediaQuery from "../../hooks/useMediaQuery";
 import Lottie from "lottie-react";
 import PawLoading from "../../assets/paw.json";
@@ -42,11 +42,12 @@ function List() {
 
       {isMobile ? (
         <div className={styles.Anouncer}>
-          <img src={AnouncerMob} alt="logo" />
+          <img src={AnouncerMobile} alt="logo" />
         </div>
       ) : (
         <div className={styles.Anouncer}>
-          <img src={Anouncer} alt="logo" />
+          <img src={AnouncerDesktop} alt="logo" />
+          
         </div>
       )}
 
