@@ -1,0 +1,357 @@
+.Footer {
+    background-color: var(--green-dark);
+    color: var(--white);
+    margin-top: 320px;
+    width: 100%;
+}
+
+.Body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin: 90px 80px 0;
+}
+
+.About {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: left;
+    width: 1000px;
+    gap: 180px;
+    margin-top: 80px;
+}
+
+.Info {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+
+.Policy {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    white-space: nowrap;
+}
+.AboutText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 15px;
+}
+
+.Help {
+    color: var(--yellow);
+}
+
+.Bank {
+    display: flex;
+    width: 325px;
+    flex-direction: row;
+    gap: 5px;
+    font-weight: 500;
+    white-space: normal;
+    display: block;
+}
+
+.Bank span {
+    font-weight: 800;
+}
+
+.Bullet {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: var(--white);
+    margin: 5px 1px;
+}
+
+.ArrowUp {
+    font-size: 30px;
+    color: var(--white);
+}
+
+.Contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin-top: -70px;
+}
+
+.ContainerInput {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    font-weight: 700;
+    gap: 10px;
+}
+
+.InputContact {
+    display: flex;
+    flex-direction: row;
+    align-items: right;
+}
+
+.InputContact input {
+    border: 3px solid var(--white);
+    border-radius: 30px;
+    border: none;
+    height: 50px;
+    font-size: 17px;
+    font-weight: 700;
+    background-color: var(--white);
+    color: var(--green);
+    padding: 20px;
+    max-width: 380px;
+    width: 320px;
+}
+
+.InputContact input:focus {
+    outline: none;
+}
+
+.InputContact button {
+    border: 3px solid var(--yellow);
+    border-radius: 30px;
+    height: 30px;
+    background-color: var(--yellow);
+    color: var(--white);
+    position: absolute;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    margin-left: 200px;
+    padding: 5px;
+    margin-top: 8px;
+
+    display: flex;
+    align-items: center;
+}
+
+
+.CopyButton {
+    background-color: var(--green);
+    color: var(--white);
+    border: 0;
+}
+
+.IconsFooter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.ContainerIconFooter {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: var(--green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Bottom {
+    height: 90px;
+    background-color: var(--green);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 15px;
+    gap: 10%;
+    margin-top: 15px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 0 80px;
+}
+
+
+@media screen and (max-width: 1420px) {
+    .InputContact input {
+        width: 300px;
+    }
+
+    .InputContact button {
+        margin-left: 185px;
+    }
+
+}
+
+@media screen and (max-width: 1400px) {
+    .About {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: left;
+        width: 700px;
+        gap: 50px;
+    }
+
+    .Info {
+        width: 70%;
+    }
+
+    .Bank {
+        width: 220px;
+    }
+
+
+}
+
+@media screen and (max-width: 1150px) {
+    /* .Footer {
+        margin-top: 100px;
+    } */
+    .About {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: left;
+        width: 600px;
+        gap: 25px;
+    }
+
+    .Info {
+        width: 70%;
+    }
+
+    .ContainerInput {
+        display: flex;
+        align-items: center;
+    }
+
+    .Contacts {
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .Footer {
+        margin-top: 200px;
+    }
+
+    .Body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .Contacts {
+        width: 296px;
+    }
+
+    .About {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+        gap: 10px;
+    }
+
+    .Info {
+        display: none;
+    }
+
+    .InputContact {
+        margin-bottom: 60px;
+        width: 100%;
+    }
+
+    .InputContact input {
+        padding: 10px;
+        border: 3px solid var(--white);
+        border-radius: 30px;
+        border: none;
+        height: 50px;
+        font-size: 14px;
+        font-weight: 600;
+        background-color: var(--white);
+        color: var(--green);
+        width: 335px;
+    }
+
+    .InputContact button {
+        font-size: 16px;
+        line-height: 20px;
+        margin-left: 190px;
+    }
+
+    
+
+    .ContainerInput {
+        display: flex;
+        align-items: center;
+    }
+    
+    .ContainerInput label {
+        font-size: 22px;
+        margin-bottom: 25px;
+    }
+
+    .Contacts {
+        gap: 20px;
+        margin-top: 52px;
+    }
+
+    .Bottom {
+        flex-direction: column;
+        padding: 0 0;
+        gap: 25px;
+        background-color: var(--green-dark);
+        height: 100%;
+    }
+
+    .Bottom p {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .Bottom a {
+        order: 3;
+    }
+
+    .Bottom img { 
+        order: 2;
+        margin-bottom: 30px;
+    }
+
+    .ArrowUp {
+        background-color: var(--green);
+        width: 100%;
+        padding: 30px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--white);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .Footer {
+        margin-top: 250px;
+    }
+    
+    .Bottom {
+        gap: 20px;
+    }
+    .Bottom p{
+        width: 175px;
+        text-align: center;
+    }
+    .Bottom p span{
+       display: none;
+    }
+}

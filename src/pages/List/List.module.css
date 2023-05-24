@@ -1,0 +1,83 @@
+.List {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Section {
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--green-dark);
+    margin: 168px 0;
+    text-align: center;
+}
+
+.Section p {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+    color: var(--yellow);
+}
+
+.Section p span{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+    color: var(--green-dark);
+}
+
+.Section span {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 27px;
+}
+
+.PetsDatingGroup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 4%;
+    margin-bottom: 40px;
+}
+
+.Anouncer {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.ButtonStart {
+    width: 280px;
+    height: 60px;
+    border: 3px solid var(--yellow);
+    border-radius: 30px;
+    background-color: var(--yellow);
+    font-size: 18px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: 700;
+    color: var(--green);
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 1400px) {
+    .PetsDatingGroup div:nth-child(3) {
+        display: none;
+    }
+
+    .PetsDatingGroup div {
+       margin-top: 10px;
+    }
+
+    .PetsDatingGroup {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}

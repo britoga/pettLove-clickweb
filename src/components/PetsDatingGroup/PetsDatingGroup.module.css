@@ -1,0 +1,32 @@
+.PetsDating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.PetsDatingGroup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 4%;
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 1400px) {
+    .PetsDatingGroup div:nth-child(3) {
+        display: none;
+    }
+
+    .PetsDatingGroup div {
+       margin-top: 10px;
+    }
+
+    .PetsDatingGroup {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}

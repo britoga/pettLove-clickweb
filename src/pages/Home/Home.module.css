@@ -1,0 +1,51 @@
+.Content {
+    display: flex;
+    flex-direction: column;
+}
+
+.Dashed {
+    /* margin: 0 auto; */
+    margin: 50px auto 10px auto;
+}
+
+.DashedTransform {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    margin: 50px auto 10px auto;
+}
+
+.DashedMin {
+    display: none;
+}
+
+.DashedMinTransform {
+    display: none;
+}
+
+@media screen and (max-width: 850px) {
+    .Dashed {
+        display: none;
+    }
+
+    .DashedTransform {
+        display: none;
+    }
+
+    .DashedMin {
+        display: flex;
+        margin: 0 auto;
+        margin-top: 150px;
+    }
+
+    .DashedMinTransform {
+        display: flex;
+        margin: 0 auto;
+        margin-top: 150px;
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+    }
+}

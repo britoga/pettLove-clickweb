@@ -1,0 +1,80 @@
+.HeroHeader {
+    background-color: var(--white-dark);
+    height: 530px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+
+    padding: 172px 0 92px 0;
+}
+
+.HowItWorks {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-gray);
+    line-height: 22px;
+}
+
+.FindSuitor {
+    font-size: 48px;
+    color: var(--green);
+    font-weight: 900;
+    text-align: center;
+    max-width: 675px;
+    height: 118px;
+    line-height: 59px;
+}
+
+.BtnStart {
+    border: 3px solid var(--yellow);
+    border-radius: 30px;
+    background-color: var(--yellow);
+    font-size: 18px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: 700;
+    color: var(--green);
+    cursor: pointer;
+
+    padding: 19px 69px;
+}
+
+@media screen and (max-width: 960px) {
+    .FindSuitor {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .HeroHeader {
+        background-color: var(--white-dark);
+        height: 370px;
+        gap: 30px;
+        padding: 172px 0 150px 0;
+    }
+
+    .HowItWorks {
+        font-size: 18px;
+        font-weight: 700;
+        color: var(--text-gray);
+        line-height: 18px;
+    }
+
+    .FindSuitor {
+        font-size: 24px;
+        color: var(--green);
+        font-weight: 900;
+        text-align: center;
+        max-width: 250px;
+        height: 118px;
+        line-height: 29px;
+    }
+
+    .BtnStart {
+        padding: 19px 69px;
+        font-size: 16px;
+    }
+}

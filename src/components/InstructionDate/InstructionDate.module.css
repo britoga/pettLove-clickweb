@@ -1,0 +1,91 @@
+.InstructionDate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    width: 100%;
+    height: 260px;
+    margin-top: 50px;
+}
+
+.InstructionDate:first-child {
+    margin-top: 225px;
+}
+
+.InstructionDate .Image img {
+    width: 480px;
+    height: 360px;
+}
+
+.Description img {
+    margin-bottom: 44px;
+}
+
+.Title {
+    font-size: 36px;
+    font-weight: 900;
+    color: var(--green);
+    line-height: 44px;
+    margin-bottom: 11px;
+}
+
+.Title span{
+    color: var(--yellow) !important;
+}
+
+.Text {
+    max-width: 580px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    height: 150px;
+    color: var(--gray);
+}
+
+@media screen and (max-width: 850px) {
+    .InstructionDate {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+        height: 260px;
+        margin-top: 200px;
+    }
+
+    .InstructionDate .Image img {
+        width: 320px;
+        height: 240px;
+        margin-bottom: 40px;
+    }
+
+    .Description {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .Description img {
+        margin-bottom: 30px;
+    }
+
+    .Title {
+        font-size: 24px;
+        font-weight: 900;
+        color: var(--green);
+        line-height: 30px;
+        text-align: center;
+        margin-bottom: 26px;
+    }
+
+    .Text {
+        width: 270px;
+        text-align: center;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
