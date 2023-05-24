@@ -4,7 +4,6 @@
 }
 
 .Dashed {
-    /* margin: 0 auto; */
     margin: 50px auto 10px auto;
 }
 
@@ -29,12 +28,6 @@
     .DashedTransform {
         opacity: 0.15;
     }
-
-    /* .Dashed,
-    .DashedTransform {
-        visibility: hidden;
-    } */
-    
 }
 
 @media screen and (max-width: 850px) {

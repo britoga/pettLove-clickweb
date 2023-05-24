@@ -21,29 +21,59 @@ function PetsDatingGroup() {
       <div className={styles.PetsDatingGroup}>
         <div>
           <PetsDating
-            imgFirstPet={PetGuido}
-            imgSecondPet={YellowHeart}
-            imgThirdPet={PetAbigail}
+            firstPetCouple={PetGuido}
+            heart={YellowHeart}
+            thirdPetCouple={PetAbigail}
             nameCouple={firstCouplePets}
           />
         </div>
         <div>
           <PetsDating
-            imgFirstPet={PetPancho}
-            imgSecondPet={YellowHeart}
-            imgThirdPet={PetKiwi}
+            firstPetCouple={PetPancho}
+            heart={YellowHeart}
+            thirdPetCouple={PetKiwi}
             nameCouple={secondCouplePets}
           />
         </div>
         <div>
           <PetsDating
-            imgFirstPet={PetBingo}
-            imgSecondPet={YellowHeart}
-            imgThirdPet={PetJade}
+            firstPetCouple={PetBingo}
+            heart={YellowHeart}
+            thirdPetCouple={PetJade}
             nameCouple={thirdCouplePets}
           />
         </div>        
       </div>
+
+      <div className={styles.PetsDatingGroup}>
+        <div>
+          <PetsDating
+            firstPetCouple={PetLennon}
+            heart={YellowHeart}
+            thirdPetCouple={PetJujuba}
+            nameCouple={fourthCouplePets}
+          />
+        </div>
+        <div>
+          <PetsDating
+            firstPetCouple={PetGuido}
+            heart={YellowHeart}
+            thirdPetCouple={PetAbigail}
+            nameCouple={firstCouplePets}
+
+
+          />
+        </div>
+        <div>
+          <PetsDating
+            firstPetCouple={PetPancho}
+            heart={YellowHeart}
+            thirdPetCouple={PetKiwi}
+            nameCouple={secondCouplePets}
+          />
+        </div>        
+      </div>
+      
     </div>
 
     

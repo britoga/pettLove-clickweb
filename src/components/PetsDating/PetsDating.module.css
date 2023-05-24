@@ -5,7 +5,7 @@
     flex-direction: column;
 }
 
-.NameCouplePett {
+.NameCouplePet {
     text-align: center;
     font-size: 18px;
     font-weight: 700;
@@ -21,9 +21,23 @@
     flex-direction: row;
     width: 360px;
     height: 180px;
-
 }
 
 .GroupImages img:nth-child(2) {
     position: absolute;
+}
+
+
+/* FixBugs */
+@media screen and (max-width: 375px) {
+
+    .GroupImages {
+        width: 100%;
+    }
+
+    .GroupImages img:nth-child(1), 
+    .GroupImages img:nth-child(3) {
+        width: 150px;
+        height: 180px;
+    }
 }

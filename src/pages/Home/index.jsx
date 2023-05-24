@@ -7,7 +7,7 @@ import SecondImage from "../../assets/two-gods-smile.svg";
 import ThirdImage from "../../assets/one-cat.svg";
 import Paw from "../../assets/icon-paw.svg";
 import Sear from "../../assets/icon-sear.svg";
-import Agende from "../../assets/icon-schedule.svg";
+import Iconschedule from "../../assets/icon-schedule.svg";
 import Dashed from "../../assets/dashed-desktop.svg";
 import DashedMin from "../../assets/dashed-mobile.svg";
 import Footer from "../../components/Footer";
@@ -26,6 +26,7 @@ function Home() {
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
+  
   return (
     <div className="Home">
       <Header />
@@ -68,7 +69,7 @@ function Home() {
           emphasisis={stepThirdTitleEmphasis}
           orderHorizontal
           image={ThirdImage}
-          icon={Agende}
+          icon={Iconschedule}
         />
 
         <Footer />

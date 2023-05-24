@@ -6,12 +6,12 @@ function PetsDating(props) {
       <div className={styles.Container}></div>
 
       <div className={styles.GroupImages}>
-        <img src={props.imgFirstPet} alt="Primeiro Pet" />
-        <img src={props.imgSecondPet} alt="logo" />
-        <img src={props.imgThirdPet} alt="Segundo" />
+        <img src={props.firstPetCouple} alt="Primeiro Pet" />
+        <img src={props.heart} alt="Coração" />
+        <img src={props.thirdPetCouple} alt="Segundo Pet" />
       </div>
 
-      <p className={styles.NameCouplePett}>{props.nameCouple}</p>
+      <p className={styles.NameCouplePet}>{props.nameCouple}</p>
     </div>
   );
 }

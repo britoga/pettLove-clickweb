@@ -11,18 +11,20 @@ import PetsDatingGroup from "../../components/PetsDatingGroup";
 
 function List() {
   const isMobile = useMediaQuery("(max-width: 880px)");
-  const isMobileBig = useMediaQuery("(max-width: 1400px)");
 
   const [loadIcon, setLoadIcon] = useState(false);
   const [loadListPlus, setloadListPlus] = useState(false);
+  const [isActive, setIsActive] = useState(false);
+
 
   const loadList = () => {
-    // setloadListPlus(true);
+    setloadListPlus(true);
     setLoadIcon(true);
     setloadListPlus(false);
     setTimeout(() => {
       setLoadIcon(false);
       setloadListPlus(true);
+      setIsActive(true)
     }, 4000);
   };
 
@@ -38,8 +40,6 @@ function List() {
 
       <PetsDatingGroup />
 
-      {isMobileBig ? "" : <PetsDatingGroup />}
-
       {isMobile ? (
         <div className={styles.Anouncer}>
           <img src={AnouncerMobile} alt="logo" />
@@ -53,16 +53,14 @@ function List() {
 
       <PetsDatingGroup />
 
-      {isMobileBig ? "" : <PetsDatingGroup />}
-
       <button
         className={styles.ButtonStart}
         onClick={loadList}
         disabled={loadIcon}
         style={
           loadIcon
-            ? { backgroundColor: "#c9c9c9", color: "black", border: "none" }
-            : { backgroundColor: "" }
+            ? { backgroundColor: "#c9c9c9", color: "black", border: "none"}
+            : { backgroundColor: "", visibility: isActive ? "hidden" : "visible"}
         }
       >
         {" "}
@@ -77,7 +75,7 @@ function List() {
       )}
 
       {loadListPlus && <PetsDatingGroup />}
-      {loadListPlus && <PetsDatingGroup />}
+
 
       <Footer />
     </div>
