@@ -48,7 +48,7 @@
 }
 
 .Anouncer {
-    margin-top: 50px;
+    margin-top: -50px;
     margin-bottom: 50px;
 }
 
@@ -75,6 +75,10 @@
 }
 
 @media screen and (max-width: 1400px) {
+    .Anouncer {
+        margin-top: 0px;
+    }
+
     .Section {
         margin: 168px 0 70px 0;
     }
